@@ -21,7 +21,8 @@ if (CMAKE_BUILD_TYPE STREQUAL "Release")
         add_custom_command(
             TARGET app
             POST_BUILD 
-            COMMAND mugideploy collect --bin ${_binary} --dest ${_base}
+            COMMAND windeployqt ${_binary} --dir ${_base}
+            COMMAND ${CMAKE_COMMAND} -E copy ${_binary} ${_base}
             COMMAND del /f ${_zip}
             COMMAND 7z a ${_zip} ${_base}
         )
