@@ -20,7 +20,7 @@ git clone https://github.com/mugiseyebrows/cmake-qt-sample.git -b windeployqt cm
 git clone https://github.com/mugiseyebrows/cmake-qt-sample.git -b mugideploy cmake-qt-sample-mugideploy
 ```
 
-[main](https://github.com/mugiseyebrows/cmake-qt-sample) branch contains script that doesn't include deployment
+[main](https://github.com/mugiseyebrows/cmake-qt-sample) branch contains script that doesn't provide deployment
 
 ```bash
 git clone https://github.com/mugiseyebrows/cmake-qt-sample.git -b main cmake-qt-sample-main
