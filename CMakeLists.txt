@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(app)
+project(app VERSION 1.0.0)
 
-include(DeployQt5.cmake)
-include(InstallRuntimeDeps.cmake)
-include(PrintAllVars.cmake)
+configure_file(config.h.in config.h @ONLY)
+
+include(cmake/DeployQt5.cmake)
+include(cmake/InstallRuntimeDeps.cmake)
 
 find_package(Qt5Widgets)
 find_package(Qt5Core)
